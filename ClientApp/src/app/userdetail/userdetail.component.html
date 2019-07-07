@@ -1,22 +1,22 @@
-<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-   <div class="container register-form">
+<form [formGroup]="userdetailForm" (ngSubmit)="onSubmit()">
+  <div class="container userdetail-form">
     <div class="form">
       <div class="note">
-        <p>This is a simpleRegister Form made using Boostrap.</p>
+        <p>This is a userdetail Form made using Boostrap.</p>
       </div>
       <div class="form-content">
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" class="form-control" formControlName="user" placeholder="Your Name *" value="" />
+              <input type="text" class="form-control" formControlName="username" placeholder="Your Name *" value="" />
             </div>
             <div class="form-group">
-              <input type="text" class="form-control"  placeholder="Phone Number *" value="" />
+              <input type="text" class="form-control"   placeholder="Phone Number *" value="" />
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Password *" value="" />
+              <input type="text" class="form-control" formControlName="pwd" placeholder="Your Password *" value="" />
             </div>
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Confirm Password *" value="" />
@@ -29,7 +29,6 @@
   </div>
 
 </form>
-{{ loginData | json}}
+
 <hr />
 <a (click)="onBack()" class="text-info">Go to login</a>
-<app-list></app-list>

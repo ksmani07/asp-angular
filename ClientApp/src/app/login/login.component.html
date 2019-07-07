@@ -20,8 +20,9 @@
                 <input type="submit" name="submit" [disabled]="!loginForm.valid" class="btn btn-info btn-md" value="submit">
               </div>
               <div id="register-link" class="text-right">
-                <a [routerLink]="['register']" class="text-info">Register dummy</a>
-                <a (click)="onRegister()" class="text-info">Register here</a>
+                <!--<a [routerLink]="['register']" class="text-info">Register dummy</a>-->
+                <a [routerLink]="['userdetail']" class="text-info">credentials</a>
+                <a (click)="onRegister()" class="text-info">Register here</a> 
               </div>
             </div>
           </div>
